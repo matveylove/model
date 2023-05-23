@@ -1,0 +1,157 @@
+.galery{
+    font-family: 'Century Gothic';
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.galery__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galery__black{
+    width: 50%;
+    background-color: #222222;
+    /* padding: 5%; */
+}
+.galery__title{
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    margin-left: 10%;
+}
+
+.galery__title span{
+    font-weight: 400;
+}
+
+.galery__note{
+    display: inline-block;
+    color: #CBCBCB;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.galery__btn{
+    color: #F3F3F3;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.galery__btn{
+    border: 1px solid transparent;
+    padding: 10px;
+}
+
+.galery__btn:hover {
+    border: 1px solid #871212;
+    transition: all .3s ease-in-out;
+}
+
+.galery__menu{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+.galery__menu span{
+    color: white;
+    margin: 0px 30px;
+}
+
+.galery__item{
+    width: 25%;   
+}
+.galery__img{
+    width: 100%;
+}
+
+@media(max-width: 1399px) {
+    .galery__black {
+        width: 100%;
+        padding: 4rem 0rem;
+    }
+    .galery__menu{
+        margin-top: 3%;
+    }
+
+    .galery__note{
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 867px) {
+    .galery__btn{
+        font-size: 16px;
+    }
+    .galery__black span{
+        margin-left: 0;
+    }
+    .galery__black h2 {
+        margin-left: 0;
+    }
+    .galery__black div {
+        margin-left: 0;
+    }
+
+    .galery__black{
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 651px) {
+    .galery__item{
+        width: 50%;
+    }
+    .galery__btn{
+        font-size: 14px;
+    }
+    .galery__black h2 {
+        font-size: 40px;
+    }
+    .galery__black div {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 599px) {
+    .galery__btn{
+        font-size: 12px;
+    }
+    .galery__black h2 {
+        font-size: 40px;
+    }
+    .galery__black div {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 561px) {
+    .galery__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .galery__menu span{
+        margin: 0;
+    }
+    .galery__btn{
+        width: 20%;
+    }
+}
+
+@media(max-width: 385px) {
+    .galery__btn{
+        width: 30%;
+    }
+    
+}
+

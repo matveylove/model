@@ -1,0 +1,19 @@
+@import './fonts.css';
+@import './header.css';
+@import './title.css';
+@import './about.css';
+@import './models.css';
+@import './face.css';
+@import './rates.css';
+@import './galery.css';
+@import './feedback.css';
+@import './form.css';
+@import './contact.css';
+@import './footer.css';
+
+.container{
+    max-width: 1640px;
+    width: 100%;
+    height: 1000%;
+    margin: 0 auto;
+}

@@ -1,0 +1,119 @@
+.feedback{
+    font-family: 'Century Gothic';
+    margin-top: 120px;
+}
+
+.feedback__slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.feedback__list{
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+}
+
+.feedback__text{
+    background-color: #CBCBCB;
+    color: #222222;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    padding: 10%;
+}
+
+.feedback__item{
+    width: 30%;
+}
+
+.feedback__left{
+    padding: 0.5rem;
+    border: 2px solid #871212;
+    max-height: 60px;
+    max-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback__left:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.feedback__right{
+    padding: 0.5rem;
+    border: 2px solid #871212;
+    max-height: 60px;
+    max-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback__right:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.feedback__text img{
+    margin-bottom: 45px;
+}
+
+.feedback__user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 40px;
+}
+
+.feedback__line{
+    width: 40px;
+    height: 2px;
+    background-color: #222222;
+}
+
+.feedback__name h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.feedback__name span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.feedback__slider{
+    margin-top: 60px;
+}
+.feedback__note{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #871212;
+    text-transform: uppercase;
+}
+
+.feedback__wrapper h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 49px;
+}
+
+.feedback__wrapper h2 span {
+    font-weight: 400;
+}
+

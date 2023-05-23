@@ -1,0 +1,91 @@
+.footer{
+    font-family: 'Century Gothic';
+    background-color: #222222;
+    padding: 3rem 0rem;
+}
+
+.footer__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+    width: 25%; 
+}
+
+.footer__btn{
+    background-color: #871212;
+    color: #FFFFFF;
+    padding: 16px 24px;
+    margin-bottom: 40px;
+}
+
+.footer__btn img{
+    margin-left: 23px;
+}
+
+.footer__right{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__right a{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    opacity: 0.6;
+}
+
+.footer__right span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    opacity: 0.6;
+}
+
+.footer__menu a{
+    color: #CBCBCB;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.footer__menu span{
+    margin: 0 2rem;
+    color: #CBCBCB;
+}
+
+.footer__menu{
+    margin-bottom: 2rem;
+}
+
+.footer__link{
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.footer__logo img{
+    width: 100%;
+}
+
+.footer__logo{
+    width: 10%;
+}

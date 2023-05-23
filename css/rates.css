@@ -1,0 +1,254 @@
+.rates{
+    font-family: 'Century Gothic';
+    margin-bottom: 120px;
+}
+.rates__wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+.rates__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 49px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.rates__photo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.rates__left {
+    width: 50%;
+}
+
+
+.rates__right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rates__note{
+    font-weight: 400;
+}
+
+.rates__box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rates__box:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.rates__price{
+    position: relative;
+    width: 80%;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rates__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rates__price h3{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.rates__price span{
+    font-weight: 700;
+    font-size: 48px;
+    color: #871212;
+    line-height: 49px;
+}
+.rates__name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+}
+
+.rates__box h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.rates__box span{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #871212;
+}
+
+.rates__field{
+    position: relative;
+    left: -50px;
+}
+
+.rates__fieldr{
+    position: relative;
+    left: 50px;
+}
+
+.rates__button{
+    padding: 17px 24px;
+    background-color: #871212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.rates__btn{
+    position: relative;
+}
+
+.rates__btn:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.rates__btn:hover .rates__shadow {
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.rates__shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #871212;
+}
+
+.rates__button img{
+    margin-left: 17px;
+}
+
+@media (max-width: 1500px) {
+    .rates__field {
+        position: static;
+    }
+
+    .rates__fieldr{
+        position: static;
+    }   
+    .rates__box{
+        display: flex;
+        flex-direction: column;
+    }
+    .rates__box-center{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 936px) {
+    .rates__price h3,.rates__price span{
+        font-size: 30px;
+    }
+    
+    .rates__name h4, .rates__name span{
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 706px) {
+    .rates__price h3,.rates__price span{
+        font-size: 25px;
+    }
+    .rates__name h4, .rates__name span{
+        font-size: 18px;
+    }
+    .rates__name {
+        padding: .5rem;
+    }
+}
+
+@media (max-width: 618px) {
+    .rates__photo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rates__wrapper {
+        padding: 0px 20px;
+    }
+    .rates__left{
+        width: 90%;
+    }
+
+    .rates__right {
+        width: 90%;
+    }
+
+    .rates__name {
+        padding: 1rem 1rem;
+    }
+
+    .rates__price h3,.rates__price span{
+        font-size: 30px;
+    }
+    
+    .rates__name h4, .rates__name span{
+        font-size: 22px;
+    }
+    .rates__box img{
+        /* width: 100%; */
+    }
+}
+
+@media (max-width: 452px) {
+    .rates__price h3 {
+        font-size: 25px;
+    }
+    .rates__name h4, .rates__name span {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 406px) {
+    .rates__price h3, .rates__price span {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .rates__price h3, .rates__price span {
+        font-size: 18px;
+    }
+    .rates__name h4, .rates__name span {
+        font-size: 16px;
+    }
+    .rates__name {
+        padding: 0.5rem 0.5rem;
+    }
+}

@@ -1,0 +1,261 @@
+.face{
+    font-family: 'Century Gothic';
+    margin-bottom: 120px;
+}
+
+.face__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.face__right{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.face__black{
+    background-color: #222222;
+    padding: 4rem 2rem;
+    color: #FFFFFF;
+    max-width: 672px;
+    width: 100%;
+}
+.face__about{
+    color: #CBCBCB;
+    margin-bottom: 10px;
+}
+
+.face__desc span{
+    color: #CBCBCB;
+}
+
+.face__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 76px;
+}
+
+.face__item{
+    width: 30%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.face__line{
+    width: 20px;
+    height: 1px;
+    background-color: #CBCBCB;
+    margin-right: 1rem;
+}
+
+.face__name{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 20px;
+}
+
+.face__info{
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+}
+.face__desc h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.face__button{
+    padding: 17px 24px;
+    border: 1px solid #871212;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: #222222;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+}
+
+.face__shadow{
+    position: absolute;
+    width: 92%;
+    height: 100%;
+    z-index: 1;
+    border: 1px solid #871212;
+    top: 14px;
+    left: 10px;
+}
+
+.face__btn{
+    position: relative;
+    min-width: 254px;
+    min-height: 56px;
+    background-color: #222222;
+}
+
+.face__btn:hover {
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+}
+
+.face__btn:hover .face__shadow {
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.face__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 49px;
+    margin-bottom: 40px;
+}
+
+.face__left{
+    width: 60%;
+}
+
+.face__arrowl{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #871212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.face__arrowl:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+    filter: brightness(0.5);
+}
+
+.face__arrowr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #871212;
+}
+
+.face__arrowr:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+    filter: brightness(0.5);
+}
+
+.face__number{
+    color: #871212;
+    margin: 0rem 1rem;
+}
+
+.face__slides{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 2rem 0;
+}
+
+/* 1173 */
+
+@media (max-width: 1173px) {
+    .face__black{
+        padding: 2rem 1rem;
+    }
+
+    .face__about{
+        font-size: 14px;
+    }
+
+    .face__name{
+        font-size: 20px;
+    }
+
+    .face__info{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .face__desc h4{
+        font-size: 16px;
+    }
+
+    .face__list{
+        margin-bottom: 30px;
+    }
+
+    .face__desc span{
+        font-size: 14px;
+    }
+    .face__button{
+        font-size: 14px;
+    }
+
+    .face__shadow{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .face__wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .face__title{
+        text-align: center;
+    }
+
+    .face__right{
+        align-items: center;
+        width: 100%;
+    }
+    .face__left {
+        width: 100%;
+    }
+}
+
+@media (max-width: 431px) {
+    .face{
+        margin-bottom: 30px;
+    }
+    .face__wrapper{
+        padding: 10px;
+    }
+    .face__item{
+        width: 48%;
+    }
+    .face__about{
+        font-size: 12px;
+    }
+
+    .face__name{
+        font-size: 28px;
+    }
+
+    .face__info{
+        font-size: 14px;
+    }
+
+    .face__desc h4{
+        font-size: 14px;
+    }
+
+    .face__desc span{
+        font-size: 12px;
+    }
+    .face__button{
+        font-size: 12px;
+    }
+
+}

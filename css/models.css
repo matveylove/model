@@ -1,0 +1,143 @@
+.models{
+    font-family: 'Century Gothic';
+    margin-top: 240px;
+    margin-bottom: 140px;
+}
+
+.models__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.models__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.models__item{
+    width: 32%;
+    position: relative;
+}
+
+.models__slider{
+    display: flex;
+    align-items: center;
+}
+
+.models__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 49px;
+    text-align: center;
+}
+
+.models__name{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -2rem;
+}
+
+.models__name h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 1rem;
+    border-bottom: 1px solid #222222;
+    display: inline-block;
+    margin-bottom: 12px;
+
+}
+
+.models__name span{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #222222;
+}
+@media(max-width: 1299px) {
+    .models__name h4 {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+    .models{
+        margin-top: 0;
+    }
+}
+
+
+@media(max-width: 1133px) {
+    .models__name h4 {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+    .models{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 947px) {
+    .models__name h4 {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+}
+
+@media(max-width: 847px) {
+    .models__list{
+        flex-wrap: wrap;
+    }
+    .models__item{
+        width: 48%;
+        margin-bottom: 5rem;
+    }
+
+} 
+
+@media(max-width: 600px) {
+    .models__item{
+        width: 90%;
+    }
+    .models__wrapper{
+        padding: 10px;
+    }
+    .models__name h4{
+        font-size: 18px;
+    }
+    .models__list{
+        align-items: center;
+        justify-content: center;
+    }
+    .models{
+        margin-bottom: 30px;
+    }
+} 
+
+@media(max-width: 397px) {
+    .models__title {
+        font-size: 33px;
+        line-height: 115%;
+    }
+
+    .about__about{
+        font-size: 16px;
+    }
+    .models__name h4{
+        font-size: 12px;
+    }
+} 
+
+@media(max-width: 320px) {
+    .models__name h4{
+        padding: 0.1rem;
+    }
+} 
+/* 397 */
