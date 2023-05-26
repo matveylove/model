@@ -41,11 +41,23 @@
 }
 
 .face__item{
+    opacity: 0;
     width: 30%;
     display: flex;
     margin-bottom: 20px;
     align-items: center;
+    animation: animitem 1s forwards;
+
 }
+
+@keyframes animitem {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateX(0); opacity: 1;}
+  }
+
+
+
+
 .face__line{
     width: 20px;
     height: 1px;
@@ -172,6 +184,15 @@
     margin: 2rem 0;
 }
 
+.face__img img{
+    opacity: 0;
+    animation: photo 1s forwards;
+}
+
+@keyframes photo {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateX(0); opacity: 1;}
+  }
 
 
 
