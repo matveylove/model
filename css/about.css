@@ -88,6 +88,18 @@
     margin-left: 5rem;
 }
 
+@media(max-width: 1700px) {
+    .about__right div{
+        bottom: 20px;
+    }
+
+    
+    .about__right div {
+        right: -2rem;
+    }
+}
+
+
 @media(max-width: 1580px) {
     .about__right div{
         bottom: 20px;

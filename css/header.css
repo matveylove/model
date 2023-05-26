@@ -7,13 +7,50 @@
     line-height: 1.2rem;
     color: #FFFFFF;
     position: relative;
-    z-index: 3;
+    z-index: 1;
 }
 
+.burger{
+    display: none;
+}
+
+.burger__box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #222222;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+.burger__box a{
+    margin-bottom: 20px;
+}
+
+.burger__close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.burger__item:not(:last-child){
+    margin-right: 1rem;
+}
+
+
+.burger__list{
+    display: flex;
+}
 .burger img{
     width: 30px;
     height: 30px;
-    display: none;
 }
 
 .header a {
@@ -81,7 +118,7 @@
     /* .header__right {
         display: none;
     } */
-    .burger img{
+    .burger{
         display: block;
     }
 }
