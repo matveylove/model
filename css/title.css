@@ -170,17 +170,24 @@
 }
 
 .title__modal{
-    transition: all 0.3s ease-in-out;
     position: fixed;
     width: 100%;
     height: 100vh;
+    opacity: 0;
     top: 0;
     left: 0;
     z-index: 10;
     display: none;
     justify-content: center;
     align-items: center;
+    animation: ani 2.5s forwards;
 }
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 .title__close {
     cursor: pointer;
 }
@@ -357,5 +364,19 @@
     }
     .header__right {
         display: none;
+    }
+}
+
+@media (max-width: 351px) {
+    .title__modal-video video{
+        height: auto;
+        width: 80%;
+    }
+
+    .title__modal-video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 }

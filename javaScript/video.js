@@ -9,6 +9,6 @@ close.addEventListener('click', function () {
     modal.style.display = 'none';
 });
 
-modal.addEventListener('click', function () {
-    modal.style.display = 'none'
-})
+// modal.addEventListener('click', function () {
+//     modal.style.display = 'none'
+// })

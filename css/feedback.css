@@ -3,23 +3,11 @@
     margin-top: 120px;
 }
 
-.feedback__slider{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .feedback__wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
 
-}
-
-.feedback__list{
-    display: flex;
-    justify-content: space-between;
-    width: 93%;
 }
 
 .feedback__text{
@@ -33,38 +21,6 @@
 
 .feedback__item{
     width: 30%;
-}
-
-.feedback__left{
-    padding: 0.5rem;
-    border: 2px solid #871212;
-    max-height: 60px;
-    max-width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.feedback__left:hover{
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.feedback__right{
-    padding: 0.5rem;
-    border: 2px solid #871212;
-    max-height: 60px;
-    max-width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.feedback__right:hover{
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
-    cursor: pointer;
 }
 
 .feedback__text img{
@@ -96,9 +52,7 @@
     font-size: 14px;
     line-height: 17px;
 }
-.feedback__slider{
-    margin-top: 60px;
-}
+
 .feedback__note{
     font-weight: 400;
     font-size: 20px;
@@ -111,22 +65,36 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 49px;
+    margin-bottom: 20px;
 }
 
 .feedback__wrapper h2 span {
     font-weight: 400;
 }
 
+
+.mySwiper{
+    width: 100%; 
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-button-prev::after {
+    color: #871212;
+}
+.swiper-button-next::after {
+    color: #871212;    
+}
+
+
+.swiper-pagination span{
+    background-color: #871212 !important;
+}
+
 @media (max-width: 1223px) {
     .feedback__wrapper {
         padding: 10px;
         
-    }
-    .feedback__list{
-        width: 90%;
-    }
-    .feedback__slider{
-        justify-content: space-around;
     }
 } 
 
@@ -155,9 +123,6 @@
     .feedback__text img{
         margin-bottom: 20px;
     }
-    .feedback__list{
-        justify-content: space-around;
-    }
 } 
 
 @media (max-width: 873px) {
@@ -167,17 +132,19 @@
     .feedback__user img{
         width: 25%;
     }
-    .feedback__list{
-        flex-direction: column;
-        align-items: center;
-    }
 
     .feedback__item{
         width: 90%;
         margin-bottom: 20px;
     }
+
+    .feedback__wrapper h2  {
+        text-align: center;
+    }
 } 
 
 @media (max-width: 619px) {
-    
+    .feedback__wrapper h2  {
+        font-size: 40px;
+    }
 } 

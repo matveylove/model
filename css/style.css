@@ -10,6 +10,7 @@
 @import './form.css';
 @import './contact.css';
 @import './footer.css';
+@import './burger.css';
 
 .container{
     max-width: 1640px;

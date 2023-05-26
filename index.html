@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                     <span class="header__text">Отзывы</span>
                     <span class="header__slash">/</span>
                 </a>
-                <a class="menu__link" href=""><span class="header__text"> Контакты</span></a>
+                <a class="menu__link" href="#footer"><span class="header__text"> Контакты</span></a>
             </nav>
             <div class="header__right">
                 <div></div>
@@ -47,29 +48,28 @@
             <div class="burger">
                 <img src="./img/content/burger.svg" alt="">
             </div>
-            <div class="burger__box">
-                <img src="./img/content/Logoo.svg" alt="">
-                <a href="" class="burger__link">+7(985)125-09-98</a>
-                <a href="" class="burger__link">emailmodelagency@mail.com</a>
-                <ul class="burger__list">
-                    <li class="burger__item">
-                        <img src="./img/content/facebook.svg" alt="">
-                    </li>
-                    <li class="burger__item">
-                        <img src="./img/content/vk.svg" alt="">
-                    </li>
-                    <li class="burger__item">
-                        <img src="./img/content/twitter.svg" alt="">
-                    </li>
-                    <li class="burger__item">
-                        <img src="./img/content/instagram.svg" alt="">
-                    </li>
-                </ul>
-                <img src="./img/content/title__close.svg" class="burger__close" alt="">
-            </div>
         </div>
     </header>
-
+    <div class="burger__box">
+        <img src="./img/content/Logoo.svg" alt="">
+        <a href="" class="burger__link">+7(985)125-09-98</a>
+        <a href="" class="burger__link">emailmodelagency@mail.com</a>
+        <ul class="burger__list">
+            <li class="burger__item">
+                <img src="./img/content/facebook.svg" alt="">
+            </li>
+            <li class="burger__item">
+                <img src="./img/content/vk.svg" alt="">
+            </li>
+            <li class="burger__item">
+                <img src="./img/content/twitter.svg" alt="">
+            </li>
+            <li class="burger__item">
+                <img src="./img/content/instagram.svg" alt="">
+            </li>
+        </ul>
+        <img src="./img/content/title__close.svg" class="burger__close" alt="">
+    </div>
     <main class="main">
         <section class="title">
             <div class="title__box">
@@ -418,12 +418,9 @@
             <div class="container feedback__wrapper">
                 <span class="feedback__note">Отзывы</span>
                 <h2>Только посмотри <br> <span>что о нас говорят</span></h2>
-                <div class="feedback__slider">
-                    <div class="feedback__left">
-                        <img src="./img/content/arrowl.png" alt="">
-                    </div>
-                    <ul class="feedback__list">
-                        <li class="feedback__item">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper mySwiperWrapper">
+                        <div class="swiper-slide">
                             <div class="feedback__text">
                                 <img class="feedback__svg" src="./img/content/feedback.svg" alt="">
                                 <p class="feedback__info">Проходила курс Модельный старт, все очень понравилось,
@@ -438,8 +435,8 @@
                                     <span>Приписка</span>
                                 </div>
                             </div>
-                        </li>
-                        <li class="feedback__item">
+                        </div>
+                        <div class="swiper-slide">
                             <div class="feedback__text">
                                 <img class="feedback__svg" src="./img/content/feedback.svg" alt="">
                                 <p class="feedback__info">Проходила курс Модельный старт, все очень понравилось,
@@ -447,15 +444,15 @@
                                     подход к обучению и приятная команда. Спасибо)</p>
                             </div>
                             <div class="feedback__user">
-                                <img src="./img/content/feedback2.png" alt="">
+                                <img src="./img/content/feedback1.png" alt="">
                                 <div class="feedback__line"></div>
                                 <div class="feedback__name">
-                                    <h4>Ананьев Даниил</h4>
+                                    <h4>Малышева Ольга</h4>
                                     <span>Приписка</span>
                                 </div>
                             </div>
-                        </li>
-                        <li class="feedback__item">
+                        </div>
+                        <div class="swiper-slide">
                             <div class="feedback__text">
                                 <img class="feedback__svg" src="./img/content/feedback.svg" alt="">
                                 <p class="feedback__info">Проходила курс Модельный старт, все очень понравилось,
@@ -463,18 +460,51 @@
                                     подход к обучению и приятная команда. Спасибо)</p>
                             </div>
                             <div class="feedback__user">
-                                <img src="./img/content/feedback3.png" alt="">
+                                <img src="./img/content/feedback1.png" alt="">
                                 <div class="feedback__line"></div>
                                 <div class="feedback__name">
-                                    <h4>Захарова Алиса</h4>
+                                    <h4>Малышева Ольга</h4>
                                     <span>Приписка</span>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                    <div class="feedback__right">
-                        <img src="./img/content/arrowr.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__text">
+                                <img class="feedback__svg" src="./img/content/feedback.svg" alt="">
+                                <p class="feedback__info">Проходила курс Модельный старт, все очень понравилось,
+                                    особенно
+                                    подход к обучению и приятная команда. Спасибо)</p>
+                            </div>
+                            <div class="feedback__user">
+                                <img src="./img/content/feedback1.png" alt="">
+                                <div class="feedback__line"></div>
+                                <div class="feedback__name">
+                                    <h4>Малышева Ольга</h4>
+                                    <span>Приписка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__text">
+                                <img class="feedback__svg" src="./img/content/feedback.svg" alt="">
+                                <p class="feedback__info">Проходила курс Модельный старт, все очень понравилось,
+                                    особенно
+                                    подход к обучению и приятная команда. Спасибо)</p>
+                            </div>
+                            <div class="feedback__user">
+                                <img src="./img/content/feedback1.png" alt="">
+                                <div class="feedback__line"></div>
+                                <div class="feedback__name">
+                                    <h4>Малышева Ольга</h4>
+                                    <span>Приписка</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-button-prev swiperColor"></div>
+                    <div class="swiper-button-next swiperColor"></div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -534,7 +564,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container footer__wrapper">
             <div class="footer__logo">
                 <img src="./img/content/Logoo.svg" alt="">
@@ -588,6 +618,8 @@
     <script src="./javaScript/video.js"></script>
     <script src="./javaScript/modelSlider.js"></script>
     <script src="./javaScript/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./javaScript/swiper.js"></script>
 </body>
 
 </html>
