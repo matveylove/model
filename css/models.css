@@ -63,6 +63,10 @@
     text-align: center;
     color: #222222;
 }
+
+.all__models{
+    margin-top: 40px;
+}
 @media(max-width: 1299px) {
     .models__name h4 {
         font-size: 16px;

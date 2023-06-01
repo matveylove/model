@@ -127,6 +127,9 @@
     background-image: url('../img/content/title__photo.png');
     background-position: bottom center;
     height: 875px;
+    position: relative;
+    z-index: -1;
+    animation: ani 2.5s forwards;
 }
 
 

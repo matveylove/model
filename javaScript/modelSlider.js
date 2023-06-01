@@ -9,7 +9,7 @@ console.log(faceImg);
 let count = 0;
 
 
-fetch('../json/array.json')
+fetch('../json/newModel.json')
     .then(res => res.json())
     .then(function (res) {
 

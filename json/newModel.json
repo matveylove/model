@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "gender": "Женский",
+        "name": "Дана",
+        "imageUrl": "./img/models_delo/dana.png",
+        "height": 170,
+        "eyesColor": "Зеленые",
+        "hairColor": "Русый",
+        "breast": 98,
+        "torso": 77,
+        "hips": 102,
+        "footSize": 38,
+        "age": 19,
+        "description": "Модель, полюбившаяся для съемок видео-рекламы, фэшн проектов. Так же подходит для съемок каталогов размера 46-48."
+    },
+    {
+        "id": 2,
+        "gender": "Мужской",
+        "name": "Артем",
+        "imageUrl": "./img/models_delo/artem.png",
+        "height": 193,
+        "eyesColor": "Голубо-серые",
+        "hairColor": "Русый",
+        "breast": 115,
+        "torso": 90,
+        "hips": 107,
+        "footSize": 45,
+        "age": 30,
+        "description": "Востребованная коммерческая модель г. Новосибирска. Подходит абсолютно для всех типов съемок. Имеет атлетическое телосложение."
+    },
+    {
+        "id": 3,
+        "gender": "Женский",
+        "name": "Карина",
+        "imageUrl": "./img/models_delo/karina.png",
+        "height": 170,
+        "eyesColor": "Зеленые",
+        "hairColor": "Коштановый",
+        "breast": 97,
+        "torso": 67,
+        "hips": 90,
+        "footSize": 39,
+        "age": 19,
+        "description": "Модель, подходящая для бельевых съемок, а также съемок заведений и beauty. Также подходит для съемок каталогов для шоурумов, маркетплейсов размера plus size "
+    }
+]

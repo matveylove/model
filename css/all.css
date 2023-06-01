@@ -1,0 +1,82 @@
+.all {
+    font-family: 'Century Gothic';
+    padding: 50px 0px;
+    display: none;
+    padding: 20px;
+}
+
+.all__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.all__item {
+    width: 32%;
+    margin-bottom: 20px;
+    animation: modelshow 1s forwards;
+}
+.all__item img{
+    margin-bottom: 20px;
+}
+
+.all__item h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.all__item span {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.all__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.all__btn{
+    padding: 5px 10px;
+    border: 2px solid #222222;
+}
+
+.all__btn:hover{
+   background-color: #222222;
+   color: #ffffff;
+   transform: scale(1.1);
+   transition: all 0.3s ease-in;
+   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+@keyframes modelshow {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.all__back{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border: 2px solid #222222;
+    text-transform: uppercase;  
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #222222;
+}
+.all__back:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+.all__back img{
+    margin-right: 1rem;
+    width: 2rem;
+}

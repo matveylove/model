@@ -11,6 +11,7 @@
 @import './contact.css';
 @import './footer.css';
 @import './burger.css';
+@import './all.css';
 
 .container{
     max-width: 1640px;
@@ -18,3 +19,18 @@
     height: 1000%;
     margin: 0 auto;
 }
+
+.main__hide {
+    animation: mainAnimation 1s linear forwards;
+}
+
+@keyframes mainAnimation {
+    0% {transform: translateX(-150%);}
+    15% {transform: translateX(5%);}
+    30% {transform: translateX(-5%);}
+    45% {transform: translateX(3%);}
+    60% {transform: translateX(-3%);}
+    75% {transform: translateX(1%);}
+    85% {transform: translateX(-1%);}
+    100% {transform: translateX(0);}
+  }

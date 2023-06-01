@@ -79,6 +79,7 @@
 .about__right{
     width: 70%;
     position: relative;
+    z-index: -1;
 }
 .about__right p {
     color: white;
