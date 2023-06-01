@@ -18,6 +18,8 @@ btnModel.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 })
 
+
+// Отображение списка моделей 
 fetch('../json/array.json')
     .then(res => res.json())
     .then(res => {
