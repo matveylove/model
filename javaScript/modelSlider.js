@@ -5,9 +5,7 @@ let end = document.querySelector('.face__end');
 let faceImg = document.querySelector('.face__img');
 let list = document.querySelector('.face__list');
 
-console.log(faceImg);
 let count = 0;
-
 
 fetch('../json/newModel.json')
     .then(res => res.json())
@@ -17,7 +15,7 @@ fetch('../json/newModel.json')
         end.innerHTML = res.length;
 
         arrowr.addEventListener('click', function () {
-            if (count != 30) {
+            if (count != 2) {
                 count++
                 start.innerHTML = count + 1;
             }

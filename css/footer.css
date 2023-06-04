@@ -2,6 +2,11 @@
     font-family: 'Century Gothic';
     background-color: #222222;
     padding: 3rem 0rem;
+    animation: ani 2.5s forwards;
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; */
 }
 
 .footer__wrapper{
@@ -141,3 +146,4 @@
         margin-bottom: 2rem;
     }
 }
+

@@ -25,12 +25,18 @@
 }
 
 @keyframes mainAnimation {
-    0% {transform: translateX(-150%);}
-    15% {transform: translateX(5%);}
+    0% {
+        opacity: 0;
+        /* transform: translateX(-150%); */
+    }
+    /* 15% {transform: translateX(5%);}
     30% {transform: translateX(-5%);}
     45% {transform: translateX(3%);}
     60% {transform: translateX(-3%);}
     75% {transform: translateX(1%);}
-    85% {transform: translateX(-1%);}
-    100% {transform: translateX(0);}
+    85% {transform: translateX(-1%);} */
+    100% {
+        opacity: 1;
+        /* transform: translateX(0); */
+    }
   }

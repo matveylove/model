@@ -79,11 +79,22 @@
     overflow: hidden;
 }
 
+.mySwiper2{
+    width: 100%; 
+    position: relative;
+    overflow: hidden;
+}
+
+
 .swiper-button-prev::after {
     color: #871212;
 }
 .swiper-button-next::after {
     color: #871212;    
+}
+
+.swiper__arrow-left{
+    position: absolute;
 }
 
 

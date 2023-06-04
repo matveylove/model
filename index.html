@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Дело Модели</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -629,17 +629,50 @@
         <section class="all">
             <div class="container all__wrapper">
                 <div class="all__hide">
-                    <button class="all__back">
-                        <img src="./img/content/all__left.svg" alt="">
-                        Вернуться на главную
-                    </button>
+                    <div class="all__filter">
+                        <button class="all__back">
+                            <img src="./img/content/all__left.svg" alt="">
+                            Вернуться на главную
+                        </button>
+                        <div class="all__category">
+                            <button class="all__all">ВСЕ</button>
+                            <button class="all__mail">МУЖЧИНЫ</button>
+                            <button class="all__fmail">ЖЕНЩИНЫ</button>
+                        </div>
+                        <div class="all__absolute">
+                            <button class="all__filterBtn">
+                                <span>Фильтры</span>
+                                <img src="./img/content/arrow-bottom.svg" alt="">
+                            </button>
+                            <div class="all__filterBox">
+                                <button class="all__age">По возрасту</button>
+                                <button class="all__height">По росту</button>
+                                <button class="all__size">По размеру ноги</button>
+                            </div>
+                        </div>
+                    </div>
                     <ul class="all__list">
 
                     </ul>
                 </div>
 
-                <div>
-                    <h2></h2>
+                <div class="porfolio">
+                    <div class="porfolio__top">
+
+                    </div>
+
+                    <div class="swiper-container mySwiper2">
+                        <div class="swiper-wrapper mySwiperWrapper2">
+
+                        </div>
+                        <div class="swiper-button-prev swiper__arrow-left"></div>
+                        <div class="swiper-button-next swiper__arrow-right"></div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
+
                 </div>
 
 
@@ -704,6 +737,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./javaScript/swiper.js"></script>
     <script src="./javaScript/allModels.js"></script>
+    <script src="./javaScript/category.js"></script>
+    <script src="./javaScript/filter.js"></script>
 </body>
 
 </html>

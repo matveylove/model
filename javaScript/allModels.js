@@ -31,6 +31,10 @@ fetch('../json/array.json')
                        <div>
                             <h4>${item.name}</h4>
                             <div>
+                                <span>Возраст:</span>
+                                <span>${item.age}</span>
+                            </div>
+                            <div>
                                 <span>Рост:</span>
                                 <span>${item.height}</span>
                             </div>
@@ -50,21 +54,109 @@ fetch('../json/array.json')
             `
         })
 
-
         // Появление портфолио
-        const all__btn = document.querySelectorAll('.all__btn');
-
-        all__btn.forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                let modelName = btn.parentElement.firstElementChild.firstElementChild.textContent.trim();
-
-                res.forEach(function (item) {
-                    if (item.name === modelName) {
-                        console.log(item);
-                    }
-                })
-
-
-            });
-        })
+        getPortfolio(res)
     })
+
+function getPortfolio(res) {
+    const all__btn = document.querySelectorAll('.all__btn');
+    const all__hide = document.querySelector('.all__hide');
+    const porfolio__top = document.querySelector('.porfolio__top');
+    const mySwiperWrapper2 = document.querySelector('.mySwiperWrapper2');
+
+    all__btn.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            let modelName = btn.parentElement.firstElementChild.firstElementChild.textContent.trim();
+            let modelAge = btn.parentElement.firstElementChild.children[1].textContent.replace(/\s/g, "").replace(/\D/g, "")
+            let modelHeight = btn.parentElement.firstElementChild.children[2].textContent.replace(/\s/g, "").replace(/\D/g, "")
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            res.forEach(function (item) {
+                if (item.name === modelName && item.age === Number(modelAge) && item.height === Number(modelHeight)) {
+                    all__hide.classList.toggle('hide')
+
+                    porfolio__top.innerHTML = `
+                    <h2 class="porfolio__title">${item.name}</h2>
+                    <ul class="portfolio__list">
+                        <li class="face__item">
+                            <div class="face__line"></div>
+                            <div class="face__desc">
+                                <h4>Возраст</h4>
+                                <span>${item.age}</span>
+                            </div>
+                        </li>
+                        <li class="face__item">
+                            <div class="face__line"></div>
+                            <div class="face__desc">
+                                <h4>Рост</h4>
+                                <span>${item.height}</span>
+                            </div>
+                        </li>
+                        <li class="face__item">
+                            <div class="face__line"></div>
+                            <div class="face__desc">
+                                <h4>Обувь</h4>
+                                <span>${item.footSize}</span>
+                            </div>
+                        </li>
+                        <li class="face__item">
+                            <div class="face__line"></div>
+                            <div class="face__desc">
+                                <h4>Глаза</h4>
+                                <span>${item.eyesColor}</span>
+                            </div>
+                        </li>
+                        <li class="face__item">
+                            <div class="face__line"></div>
+                            <div class="face__desc">
+                                <h4>Волосы</h4>
+                                <span>${item.hairColor}</span>
+                            </div>
+                        </li>
+                        <li class="face__item">
+                            <div class="face__line"></div>
+                            <div class="face__desc">
+                                <h4>Бюст</h4>
+                                <span>${item.breast}</span>
+                            </div>
+                        </li>
+                        <li class="face__item">
+                            <div class="face__line"></div>
+                            <div class="face__desc">
+                                <h4>Талия</h4>
+                                <span>${item.torso}</span>
+                            </div>
+                        </li>
+                        <li class="face__item">
+                            <div class="face__line"></div>
+                            <div class="face__desc">
+                                <h4>Бёдра</h4>
+                                <span>${item.hips}</span>
+                            </div>
+                        </li>
+                        <li class="face__item">
+                            <div class="face__line"></div>
+                            <div class="face__desc">
+                                <h4>Пол</h4>
+                                <span>${item.gender}</span>
+                            </div>
+                        </li>
+                    </ul>
+                    `
+                    console.log(item);
+                    item.imageArray.forEach(function (item) {
+                        mySwiperWrapper2.innerHTML += `
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="${item}" alt="">
+                            </div>
+                        </div>
+                        `
+                    })
+                }
+            })
+
+
+        });
+    })
+}
