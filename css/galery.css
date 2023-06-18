@@ -12,7 +12,10 @@
 .galery__black{
     width: 50%;
     background-color: #222222;
-    /* padding: 5%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 .galery__title{
     color: white;

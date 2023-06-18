@@ -8,34 +8,7 @@ all__all.addEventListener('click', function () {
         .then(res => res.json())
         .then(res => {
             res.forEach(function (item) {
-                all__list.innerHTML += `
-                    <li class="all__item">
-                        <img src="${item.imageUrl}" alt="">
-                        <div class="all__info">
-                           <div>
-                                <h4>${item.name}</h4>
-                                <div>
-                                    <span>Возраст:</span>
-                                    <span>${item.age}</span>
-                                </div>
-                                <div>
-                                    <span>Рост:</span>
-                                    <span>${item.height}</span>
-                                </div>
-                                <div>
-                                    <span>Обхваты:</span>
-                                    <span>${item.breast}/${item.torso}/${item.hips}</span>
-                                </div>
-                                <div>
-                                    <span>Размер ноги:</span>
-                                    <span>${item.footSize}</span>
-                                </div>
-                           </div>
-                           <button class="all__btn">ПОРТФОЛИО</button>
-                        </div>
-    
-                    </li>
-                `
+                showInfo(item)
             })
             getPortfolio(res)
         })
@@ -49,34 +22,7 @@ all__mail.addEventListener('click', function () {
         .then(res => {
             res.forEach(function (item) {
                 if (item.gender === 'Мужской') {
-                    all__list.innerHTML += `
-                    <li class="all__item">
-                        <img src="${item.imageUrl}" alt="">
-                        <div class="all__info">
-                           <div>
-                                <h4>${item.name}</h4>
-                                <div>
-                                    <span>Возраст:</span>
-                                    <span>${item.age}</span>
-                                </div>
-                                <div>
-                                    <span>Рост:</span>
-                                    <span>${item.height}</span>
-                                </div>
-                                <div>
-                                    <span>Обхваты:</span>
-                                    <span>${item.breast}/${item.torso}/${item.hips}</span>
-                                </div>
-                                <div>
-                                    <span>Размер ноги:</span>
-                                    <span>${item.footSize}</span>
-                                </div>
-                           </div>
-                           <button class="all__btn">ПОРТФОЛИО</button>
-                        </div>
-    
-                    </li>
-                `
+                    showInfo(item)
                 }
             })
             getPortfolio(res)
@@ -91,36 +37,40 @@ all__fmail.addEventListener('click', function () {
         .then(res => {
             res.forEach(function (item) {
                 if (item.gender === 'Женский') {
-                    all__list.innerHTML += `
-                    <li class="all__item">
-                        <img src="${item.imageUrl}" alt="">
-                        <div class="all__info">
-                           <div>
-                                <h4>${item.name}</h4>
-                                <div>
-                                    <span>Возраст:</span>
-                                    <span>${item.age}</span>
-                                </div>
-                                <div>
-                                    <span>Рост:</span>
-                                    <span>${item.height}</span>
-                                </div>
-                                <div>
-                                    <span>Обхваты:</span>
-                                    <span>${item.breast}/${item.torso}/${item.hips}</span>
-                                </div>
-                                <div>
-                                    <span>Размер ноги:</span>
-                                    <span>${item.footSize}</span>
-                                </div>
-                           </div>
-                           <button class="all__btn">ПОРТФОЛИО</button>
-                        </div>
-    
-                    </li>
-                `
+                    showInfo(item)
                 }
             })
             getPortfolio(res)
         })
 });
+
+function showInfo(item) {
+    all__list.innerHTML += `
+    <li class="all__item">
+        <img src="${item.imageUrl}" alt="">
+        <div class="all__info">
+           <div>
+                <h4>${item.name}</h4>
+                <div>
+                    <span>Возраст:</span>
+                    <span>${item.age}</span>
+                </div>
+                <div>
+                    <span>Рост:</span>
+                    <span>${item.height}</span>
+                </div>
+                <div>
+                    <span>Обхваты:</span>
+                    <span>${item.breast}/${item.torso}/${item.hips}</span>
+                </div>
+                <div>
+                    <span>Размер ноги:</span>
+                    <span>${item.footSize}</span>
+                </div>
+           </div>
+           <button class="all__btn">ПОРТФОЛИО</button>
+        </div>
+
+    </li>
+`
+}

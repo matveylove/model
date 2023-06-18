@@ -27,7 +27,16 @@
 .rates__left {
     width: 50%;
 }
-
+.rates__box:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;    
+}
+.rates__left img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 
 .rates__right {
     width: 48%;
@@ -149,6 +158,111 @@
 
 .rates__button img{
     margin-left: 17px;
+}
+
+.rates__course{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: white;
+    z-index: 100;
+    animation: showCourse 1s forwards;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.rates__lessonWeight{
+    color: #871212;
+}
+
+  @keyframes showCourse {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+.rates__courseInfo{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.rates__courseInfo::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+}
+  
+.rates__courseInfo::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #222222;
+}
+  
+.rates__courseInfo::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+.rates__courseInfo h2 {
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.rates__courseList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rates__courseList li {
+    width: 100%;
+    margin-bottom: 3rem;
+    font-size: 18px;
+    line-height: 2rem;
+    border-bottom: 1px solid #222222;
+    padding: 2rem;
+    
+}
+
+.rates__courseList li span{
+    font-size: 22px;
+    font-weight: 700;
+    color: #871212;
+}
+
+.rates__buttonClose{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 40px;
+    height: 40px;
+}
+
+.rates__coursePrice{
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rates__line{
+    margin-bottom: 0.3rem;
+    text-decoration: line-through;
+	text-decoration-color: $f9f9fd;
+
 }
 
 @media (max-width: 1500px) {

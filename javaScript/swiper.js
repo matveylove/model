@@ -5,8 +5,6 @@ new Swiper('.mySwiper', {
     },
     pagination: {
         el: '.swiper-pagination',
-        // clickable: true,
-        // dynamicBullets: true
         type: 'progressbar'
     },
     keyboard: {
@@ -21,13 +19,6 @@ new Swiper('.mySwiper', {
     slidesPerView: 3,
     watchOverflow: true,
     spaceBetween: 30,
-    // effect: 'cube',
-    // cubeEffect: {
-    //     shadow: true,
-    //     shadowOffset: 20,
-    //     shadowScale: 0.9,
-    //     slideShadows: true,
-    // }
     breakpoints: {
         754: {
             slidesPerView: 3,
@@ -39,7 +30,7 @@ new Swiper('.mySwiper', {
             slidesPerView: 1
         }
 
-    }
+    },
 })
 
 new Swiper('.mySwiper2', {
@@ -75,6 +66,11 @@ new Swiper('.mySwiper2', {
         280: {
             slidesPerView: 1
         }
-
+    },
+    initialSlide: 1,
+    autoplay: {
+        delay: 1000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false
     }
 })

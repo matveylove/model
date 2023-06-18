@@ -67,9 +67,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 10px;
-    border: 2px solid #222222;
+    border: 1px solid #222222;
     text-transform: uppercase;  
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 2rem;
     color: #222222;
 }
@@ -82,18 +82,41 @@
     width: 2rem;
 }
 
+.all__input input{
+    max-width: 100%;
+    border: 1px solid #222222;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 3px;
+    padding: 0.3rem;
+}
+.all__input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .all__filter{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
+.all__breast>span{
+    margin-bottom: 0.6rem;
+    display: inline-block;
+}
+
+.all__breast{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
 .all__category button {
     padding: 10px;
-    font-weight: 700;
-    border: 2px solid #222222;
+    font-weight: 400;
+    border: 1px solid #222222;
     color: #222222;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .all__category button:not(:last-child) {
@@ -112,13 +135,13 @@
 }
 
 .all__filterBtn{
-    border: 2px solid #222222;
-    border-radius: 5px;
+    border: 1px solid #222222;
+    /* border-radius: 5px; */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -145,6 +168,8 @@
     align-items: flex-start;
     padding: 1rem;
     animation: ani 0.2s ease-in;
+    justify-content: center;
+    align-items: center;
 }
 
 .all__filterBox button {
@@ -161,7 +186,7 @@
 }
 
 .hide{
-    display: none;
+    display: none !important;
 }
 
 .portfolio__list{
@@ -186,4 +211,111 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
 }
+
+.portfolio__back button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border: 1px solid #222222;
+    text-transform: uppercase;  
+    font-weight: 4  00;
+    margin-bottom: 2rem;
+    color: #222222;
+}
+
+.portfolio__back img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+.portfolio__back button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
+.portfolio__back{
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+   .all__list{
+    flex-wrap: wrap;
+   }
+   .all__item{
+    width: 48%;
+   }
+   .all__filter{
+    flex-direction: column;
+    align-items: center;
+   }
+   .all__back{
+    width: 36%;
+   }
+   .all__category{
+    margin-bottom: 2rem;
+   }
+   .all__absolute{
+    margin-bottom: 3rem;
+   }
+}
+@media (max-width: 578px) {
+    .all__info div div {
+        display: none;
+    }
+ }
+ @media (max-width: 557px) {
+    .all__list{
+        justify-content: center;
+    }
+    .all__item {
+        width: 90%;
+    }
+ }  
+ 
+ @media (max-width: 477px) {
+    .all__filter{
+        font-size: 12px;
+    }
+    .all__category{
+        margin-bottom: 1rem;
+       }
+       .all__absolute{
+        margin-bottom: 1rem;
+       }
+       .all__back{
+        margin-bottom: 1rem;
+        width: 55%;
+       }
+    .all__filterBtn{
+        padding: 5px 10px;
+    }
+    .all__category{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .face__description{
+        max-width: 90%;
+    }
+ }  
+ @media (max-width: 375px) {
+    .all__category button:not(:last-child) {
+        margin-right: 1rem;
+    }
+    .all__filter{
+        font-size: 10px;
+    }
+ }  
+ @media (max-width: 299px) {
+    .all__btn{
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .all__info div h4{
+        font-size: 15px;
+    }
+ }  
+ 

@@ -11,6 +11,7 @@
 @import './contact.css';
 @import './footer.css';
 @import './burger.css';
+@import './diagnos.css';
 @import './all.css';
 
 .container{
@@ -39,4 +40,8 @@
         opacity: 1;
         /* transform: translateX(0); */
     }
+  }
+
+  body{
+    user-select: none;
   }

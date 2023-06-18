@@ -189,6 +189,39 @@
     animation: photo 1s forwards;
 }
 
+.face__description{
+    text-align: center;
+    max-width: 70%;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+    padding: 2rem;
+}
+
+.face__dop{
+    display: flex;
+    justify-content: center;
+}
+
+
+.face__descnew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showAnimation {
+    animation: animationPorfolio 1s forwards;
+}
+
+@keyframes animationPorfolio {
+    0% {transform: translateX(-50%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+  }
+
+
+
 @keyframes photo {
     0% {transform: translateX(-150%);}
     100% {transform: translateX(0); opacity: 1;}
@@ -250,6 +283,7 @@
     }
     .face__left {
         width: 100%;
+        justify-content: center;
     }
 }
 

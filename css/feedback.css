@@ -35,6 +35,10 @@
     margin-top: 40px;
 }
 
+.feedback__user img{
+    width: 40%;
+}
+
 .feedback__line{
     width: 40px;
     height: 2px;
@@ -97,9 +101,13 @@
     position: absolute;
 }
 
-
 .swiper-pagination span{
     background-color: #871212 !important;
+}
+
+.mySwiperWrapper2{
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 1223px) {

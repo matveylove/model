@@ -1,0 +1,56 @@
+.diagnos {
+    font-family: 'Century Gothic';
+    margin: 120px 0px;
+}
+
+.diagnos__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.diagnos__left{
+    width: 50%;
+}
+.diagnos__right{
+    width: 45%;
+}
+.diagnos__info{
+    font-weight: 600;
+    margin-top: 2rem;
+    display: inline-block;
+}
+.diagnos__list{
+    margin-top: 2rem;
+}
+.diagnos__item{
+    line-height: 1.8rem;
+    padding: 1.5rem 0rem;
+    border-bottom: 1px solid #222222;
+}
+
+.diagnos__note{
+    color: #871212;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+@media (max-width: 850px) {
+    .diagnos__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .diagnos__left{
+        width: 90%;
+    }
+    .diagnos__right{
+        width: 90%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 704px) {
+    .face__title{
+        font-size: 30px;
+    }
+}

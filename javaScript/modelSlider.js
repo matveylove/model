@@ -14,6 +14,8 @@ fetch('../json/newModel.json')
         start.innerHTML = count + 1;
         end.innerHTML = res.length;
 
+        showModelName(res[count])
+
         arrowr.addEventListener('click', function () {
             if (count != 2) {
                 count++
@@ -53,10 +55,20 @@ fetch('../json/newModel.json')
         });
     })
 
+function showModelName(item) {
+    const face__name = document.querySelector('.face__name');
+    const face__info = document.querySelector('.face__info');
+
+    face__name.innerHTML = item.name;
+    face__info.innerHTML = item.description;
+}
+
 function getListItem(item) {
+    showModelName(item)
     faceImg.insertAdjacentHTML('afterbegin', `
         <img src="${item.imageUrl}" alt="">
     `)
+
     list.insertAdjacentHTML('afterbegin', `
     <li class="face__item">
         <div class="face__line"></div>

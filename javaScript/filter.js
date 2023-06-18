@@ -3,12 +3,18 @@ const heightBtn = document.querySelector('.all__height');
 const sizeBtn = document.querySelector('.all__size');
 const filterBtn = document.querySelector('.all__filterBtn');
 const filterBox = document.querySelector('.all__filterBox');
+//  Инпуты
+
 
 filterBtn.addEventListener('click', function () {
     filterBox.classList.toggle('show')
 })
 
 heightBtn.addEventListener('click', function () {
+    heightFlag = true;
+    sizeFlag = false;
+    ageFlag = false;
+
     filterBox.classList.remove('show')
     fetch('../json/array.json')
         .then(res => res.json())
@@ -52,6 +58,10 @@ heightBtn.addEventListener('click', function () {
 })
 
 sizeBtn.addEventListener('click', function () {
+    heightFlag = false;
+    sizeFlag = true;
+    ageFlag = false;
+
     filterBox.classList.remove('show')
     fetch('../json/array.json')
         .then(res => res.json())
@@ -95,6 +105,9 @@ sizeBtn.addEventListener('click', function () {
 })
 
 ageBtn.addEventListener('click', function () {
+    heightFlag = false;
+    sizeFlag = false;
+    ageFlag = true;
     filterBox.classList.remove('show')
     fetch('../json/array.json')
         .then(res => res.json())
@@ -136,3 +149,4 @@ ageBtn.addEventListener('click', function () {
             getPortfolio(res)
         })
 })
+
