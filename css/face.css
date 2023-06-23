@@ -29,7 +29,9 @@
 }
 
 .face__desc span{
-    color: #CBCBCB;
+    color: #222222;
+    opacity: 0.8;
+    
 }
 
 .face__list{

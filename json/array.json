@@ -471,7 +471,6 @@
         "gender": "Женский",
         "name": "Яна",
         "imageArray": [
-            "./img/models_delo/yana/yana1.webp",
             "./img/models_delo/yana/yana2.webp",
             "./img/models_delo/yana/yana3.webp",
             "./img/models_delo/yana/yana4.webp",
@@ -804,8 +803,8 @@
         "breast": 94,
         "torso": 67,
         "hips": 84,
-        "footSize": 19,
-        "age": 40,
+        "footSize": 40,
+        "age": 19,
         "description": "Коммерческая модель. Подходит для съемок магазинов косметики, beauty-съемок, маркетплейсов, стоковых фотосессий "
     },
     {

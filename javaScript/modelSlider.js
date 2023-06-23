@@ -17,8 +17,12 @@ fetch('../json/newModel.json')
         showModelName(res[count])
 
         arrowr.addEventListener('click', function () {
-            if (count != 2) {
+            if (count != 4) {
                 count++
+                start.innerHTML = count + 1;
+            }
+            else if (count === 4) {
+                count = 0
                 start.innerHTML = count + 1;
             }
             faceImg.innerHTML = '';

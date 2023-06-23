@@ -49,12 +49,14 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    margin-bottom: 0.2rem;
 }
 
 .feedback__name span{
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+
 }
 
 .feedback__note{

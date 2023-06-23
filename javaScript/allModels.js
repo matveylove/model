@@ -10,8 +10,7 @@ all__back.addEventListener('click', function () {
     main__hide.style.display = 'block';
     all.style.display = 'none';
 
-    burgerBtn.style.display = 'none';
-    menu.style.display = 'flex';
+
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
 })

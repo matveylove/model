@@ -265,6 +265,72 @@
 
 }
 
+@keyframes toggleText {
+    0%{
+
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.rates__name {
+    align-items: center;
+}
+.rates__name h4{
+    font-size: 20px;
+}
+.rates__name div{
+    width: 35%;
+}
+.rates__name span{
+    font-size: 20px;
+    line-height: 30px;
+}
+.rates__price div span {
+    font-size: 30px;
+}
+.rates__price div{
+    display: flex;
+    flex-direction: column;
+}
+.rares__opasity{
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+.rates__nam div{
+    display: flex;
+    flex-direction: column;
+}
+.rates__name span {
+    margin-bottom: 0.3rem;
+}
+.rates__opas{
+    margin-bottom: 0.2rem;
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+.rates__continue{
+    animation-name: toggleText;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.rates__continue p {
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+.rates__continue img {
+    width: 30px;
+}
+
 @media (max-width: 1500px) {
     .rates__field {
         position: static;
@@ -281,25 +347,44 @@
         flex-direction: column-reverse;
     }
 }
-
-@media (max-width: 936px) {
-    .rates__price h3,.rates__price span{
-        font-size: 30px;
+@media (max-width: 1161px) {
+    .rates__price div{
+        display: flex;
+        flex-direction: column;
     }
-    
+    .rates__price h3, .rates__price div span{ 
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 993px) {
     .rates__name h4, .rates__name span{
+        font-size: 22px;
+    }
+    .rates__price h3, .rates__price div span{ 
         font-size: 22px;
     }
 }
 
-
-@media (max-width: 706px) {
-    .rates__price h3,.rates__price span{
-        font-size: 25px;
-    }
+@media (max-width: 939px) {
     .rates__name h4, .rates__name span{
         font-size: 18px;
+        line-height: 26px;
     }
+    .rates__price h3, .rates__price div span{ 
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 745px) {
+    .rates__price h3, .rates__price div span{ 
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 706px) {
     .rates__name {
         padding: .5rem;
     }
@@ -326,43 +411,65 @@
         padding: 1rem 1rem;
     }
 
+    .rates__price{
+        align-items: flex-start;
+    }
     .rates__price h3,.rates__price span{
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .rates__name h4, .rates__name span{
         font-size: 22px;
     }
-    .rates__box img{
-        /* width: 100%; */
-    }
 }
 
-@media (max-width: 452px) {
+@media (max-width: 453px) {
     .rates__price h3 {
-        font-size: 25px;
+        font-size: 16px;
     }
     .rates__name h4, .rates__name span {
         font-size: 18px;
+    }
+    .rates__courseInfo{
+        width: 90%;
+    }
+    .rates__courseInfo h2{
+        font-size: 25px;
     }
 }
 
 
 @media (max-width: 406px) {
+
     .rates__price h3, .rates__price span {
-        font-size: 22px;
+        font-size: 16px;
     }
 }
 
+@media (max-width: 371px) {
+    .rates__price h3, .rates__price span {
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 350px) {
-    .rates__price h3, .rates__price span {
-        font-size: 18px;
+    .rates__price h3, .rates__price div span{ 
+        font-size: 12px;
+        line-height: 20px;
     }
-    .rates__name h4, .rates__name span {
-        font-size: 16px;
+    .rates__name h4, .rates__name span{
+        font-size: 12px;
     }
     .rates__name {
         padding: 0.5rem 0.5rem;
+    }
+    .face__btn {
+        min-width: 200px;
+    }
+}
+@media (max-width: 306px) {
+    .rates__price h3, .rates__price div span{ 
+        font-size: 10px;
+        line-height: 18px;
     }
 }
