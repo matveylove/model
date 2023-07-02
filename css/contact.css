@@ -1,151 +1,147 @@
-.contact{
-    font-family: 'Century Gothic';
-    margin-top: 120px;
-    margin-bottom: 160px;
+.contact {
+  font-family: "Century Gothic";
+  margin-top: 120px;
+  margin-bottom: 160px;
 }
 
-.contact__wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
-.contact__note{
-    color: #871212;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+.contact__note {
+  color: #871212;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
 }
 
-.contact__title{
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 49px;
-    text-align: center;
-    margin-bottom: 80px;
+.contact__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 49px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
-.contact__title span{ 
-    font-weight: 400;
+.contact__title span {
+  font-weight: 400;
 }
 
-.contact__left{
-    background-color: #871212;
-    padding: 6rem 5rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 100px;
-    z-index: 2;
-    top: 100px;
+.contact__left {
+  background-color: #871212;
+  padding: 6rem 5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 100px;
+  z-index: 2;
+  top: 100px;
 }
 
-.contact__left a{
-    display: flex;
-    align-items: center;
+.contact__left a {
+  display: flex;
+  align-items: center;
 }
 
 .contact__left span {
-    display: inline-block;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
 }
 
-.contact__left img{ 
-    margin-right: 1rem;
+.contact__left img {
+  margin-right: 1rem;
 }
 
 .contact__tel {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.contact__box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.contact__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.contact__right{
-    position: relative;
-    z-index: 1;
-    top: -30px;
+.contact__right {
+  position: relative;
+  z-index: 1;
+  top: -30px;
 }
 
 @media (max-width: 1210px) {
-
-    .contact__left{
-        top: -100px;
-        left: 0;
-    }
-    .contact__right {
-        position: static;
-    }
-    .contact__right  img{
-        height: 100%;
-    }
-    .contact__box{
-        flex-direction: column-reverse;
-    }
-    .contact{
-        margin-top: 70px;
-    }
+  .contact__left {
+    top: -100px;
+    left: 0;
+  }
+  .contact__right {
+    position: static;
+  }
+  .contact__right img {
+    /* height: 100%; */
+  }
+  .contact__box {
+    flex-direction: column-reverse;
+  }
+  .contact {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 662px) {
-    .contact__title{
-        margin-bottom: 20px;
-        font-size: 30px;
-    }
-    .contact__note{
-        font-size: 16px;
-    }
-    .contact__left{
-        padding: 3rem;
-        top: -30px;
-    }
-    .contact__left a span{
-        font-size: 16px;
-    }
-
+  .contact__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .contact__note {
+    font-size: 16px;
+  }
+  .contact__left {
+    padding: 3rem;
+    top: -30px;
+  }
+  .contact__left a span {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 428px) {
-    .contact__title{
-        margin-bottom: 20px;
-        font-size: 30px;
-    }
-    .contact__note{
-        font-size: 14px;
-    }
-    .contact__left{
-        padding: 2rem;
-        top: -30px;
-    }
-    .contact__left a span{
-        font-size: 14px;
-        font-weight: 400;
-    }
-    .contact__tel{
-        margin-bottom: 20px;
-    }
-
+  .contact__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .contact__note {
+    font-size: 14px;
+  }
+  .contact__left {
+    padding: 2rem;
+    top: -30px;
+  }
+  .contact__left a span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .contact__tel {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 380px) {
-    .contact__title{
-        margin-bottom: 20px;
-        font-size: 26px;
-    }
-    .contact__note{
-        font-size: 12px;
-    }
-    .contact__left{
-        padding: 1rem;
-    }
-    .contact__left a span{
-        font-size: 12px;
-    }
-
+  .contact__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  .contact__note {
+    font-size: 12px;
+  }
+  .contact__left {
+    padding: 1rem;
+  }
+  .contact__left a span {
+    font-size: 12px;
+  }
 }
